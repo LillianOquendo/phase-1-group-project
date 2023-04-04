@@ -18,6 +18,7 @@ function renderJokeInfo(joke) {
     listItem.textContent = joke.joke;
     top10List.appendChild(listItem);
 }
+
 const generateJokeBtn = document.getElementById('generateJokeBtn');
 const jokeDisplay = document.getElementById('jokeDisplay');
 const submitJokeForm = document.getElementById('submitJokeForm');
