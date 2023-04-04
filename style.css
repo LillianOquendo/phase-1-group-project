@@ -55,3 +55,21 @@ textarea {
     line-height: 1.5;
     margin-top: 20px;
 }
+/* Add this to your existing style.css file */
+.fa-heart {
+    margin-right: 8px;
+    color: #d63031;
+  }
+  
+  .fa-heart:hover {
+    color: #e17055;
+  }
+  .fa-poop {
+    margin-left: 8px;
+    color: #5a460a;
+  }
+  
+  .fa-poop:hover {
+    color: #78683a;
+  }
+  
