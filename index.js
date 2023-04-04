@@ -52,5 +52,6 @@ submitJokeForm.addEventListener('submit', (e) => {
   jokeDisplay.innerHTML = jokeInput.value;
   jokeInput.value = '';
 });
+  
 
 
