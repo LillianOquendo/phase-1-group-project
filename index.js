@@ -73,17 +73,73 @@ const favoriteJokesList = document.getElementById('favorites');
 //Add a click event listener to the "Save Joke" button
 saveJokeBtn.addEventListener('click', saveJoke);
 
-//Define the saveJoke function
 function saveJoke() {
-  //Check if there a joke displayed, then save it
-  if (jokeDisplay.textContent !== '') {
-    const listItem = document.createElement('li');
-    listItem.textContent = jokeDisplay.textContent;
-    favoriteJokesList.appendChild(listItem);
-  } else {
-    //Alert the user if theres no joke to save
-    alert('No joke to save. Please generate a joke first.');
+    if (jokeDisplay.textContent !== "") {
+      const listItem = document.createElement("li");
+  
+      // Creating the like button (heart icon)
+      const heart = document.createElement("i");
+      heart.classList.add("fas", "fa-heart");
+      heart.style.cursor = "pointer";
+      heart.style.marginRight = "5px";
+      listItem.appendChild(heart);
+  
+      // Creating the like count element
+      const likeCount = document.createElement("span");
+      likeCount.textContent = "0";
+      listItem.appendChild(likeCount);
+  
+      // Creating the remove button (poop icon)
+      const removeButton = document.createElement("i");
+      removeButton.classList.add("fas", "fa-poop");
+      removeButton.style.cursor = "pointer";
+      removeButton.style.marginLeft = "5px";
+      listItem.appendChild(removeButton);
+  
+      const jokeText = document.createTextNode(" " + jokeDisplay.textContent);
+      listItem.appendChild(jokeText);
+  
+      // Initializing the 'likes' property for the listItem
+      listItem.likes = 0;
+  
+      // Adding the click event listener to the like button (heart icon)
+      heart.addEventListener("click", () => {
+        // Increment the 'likes' property of the listItem
+        listItem.likes++;
+  
+        // Update the like count displayed next to the button
+        likeCount.textContent = listItem.likes;
+  
+        // Call the 'sortListItems()' function to sort the jokes based on their likes
+        sortListItems();
+      });
+  
+      // Adding the click event listener to the remove button (poop icon)
+      removeButton.addEventListener("click", () => {
+        listItem.remove();
+      });
+  
+      favoriteJokesList.appendChild(listItem);
+    } else {
+      alert("No joke to save. Please generate a joke first.");
+    }
   }
-}
+  
+  
+  function sortListItems() {
+    // Create an array of list items
+    const listItems = Array.from(favoriteJokesList.children);
+  
+    // Sort the array in descending order based on the 'likes' property
+    listItems.sort((a, b) => b.likes - a.likes);
+  
+    // Clear the 'favoriteJokesList'
+    favoriteJokesList.innerHTML = "";
+  
+    // Re-append the sorted list items to the 'favoriteJokesList'
+    listItems.forEach((item) => favoriteJokesList.appendChild(item));
+  }
+  
+  
 
 
