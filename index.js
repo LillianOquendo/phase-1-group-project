@@ -1,4 +1,3 @@
-//declare your url, button and paragraph variables
 
 const baseUrl = "https://icanhazdadjoke.com/"
 const jokeButton = document.getElementById("jokeButton")
@@ -9,7 +8,6 @@ const paragraph = document.getElementById("paragraph")
 const fetchJoke= () => {
 
     //fetch the baseUrl
-
     fetch(baseUrl, {
 
         //the original api is an HTML so we need to tell it we only want a json
@@ -36,6 +34,3 @@ Accept: 'application/json'
 //create a button with a click eventlistener and an arrow calling back to fetchJoke()
 
 jokeButton.addEventListener('click', () => fetchJoke())
-
-
-
