@@ -39,6 +39,11 @@
             "id": "10",
             "joke": "How do you fix a broken pizza? With tomato paste."
         }     
+    ],
+    "savedJokes":[
+            {
+                "id": "",
+                "joke": ""
+            }
     ]
 }
-    
