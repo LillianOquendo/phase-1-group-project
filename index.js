@@ -24,6 +24,23 @@ function renderJokeInfo(joke) {
     top10List.appendChild(listItem);
 }
 
+function fetchFavorites() {
+  fetch(favoritesUrl)
+  .then(resp => resp.json())
+  .then(favoritesData => renderAllFavorites(favoritesData))
+}
+fetchFavorites()
+
+function renderAllFavorites(favoritesData) {
+  favoritesData.forEach(favorite => renderFavorites(favorite))
+}
+
+function renderFavorites(favorite) {
+  const favoritesLi = document.createElement("li")
+  favoritesLi.textContent = favorite.joke
+  favoriteJokesList.appendChild(favoritesLi)
+}
+
 //get references to html elements
 const generateJokeBtn = document.getElementById('generateJokeBtn');
 const jokeDisplay = document.getElementById('jokeDisplay');
@@ -141,22 +158,5 @@ function saveJoke() {
     listItems.forEach((item) => favoriteJokesList.appendChild(item));
   }
   
-  function fetchFavorites() {
-    fetch(favoritesUrl)
-    .then(resp => resp.json())
-    .then(favoritesData => renderAllFavorites(favoritesData))
-  }
-  fetchFavorites()
   
-  function renderAllFavorites(favoritesData) {
-    favoritesData.forEach(favorite => renderFavorites(favorite))
-  }
   
-  function renderFavorites(favorite) {
-    const favoritesLi = document.createElement("li")
-    favoritesLi.textContent = favorite.joke
-    favoriteJokesList.appendChild(favoritesLi)
-  }
-  
-
-
