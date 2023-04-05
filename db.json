@@ -39,6 +39,11 @@
             "id": "10",
             "joke": "How do you fix a broken pizza? With tomato paste."
         }     
+    ],
+    "favorites":[
+        {
+            "id": "1",
+            "joke": "Why do hippies love corduroy? Because it's groovy man."
+        }
     ]
 }
-    
