@@ -2,6 +2,7 @@
 const baseUrl = "http://localhost:3000"
 //Create the URL for fetching the top 10 jokes by joining /top10 with the base URL
 const top10Url = baseUrl + "/top10"
+const favoritesUrl = baseUrl + "/favorites"
 
 //Define the fetchTop10 function
 function fetchTop10() {
@@ -140,6 +141,22 @@ function saveJoke() {
     listItems.forEach((item) => favoriteJokesList.appendChild(item));
   }
   
+  function fetchFavorites() {
+    fetch(favoritesUrl)
+    .then(resp => resp.json())
+    .then(favoritesData => renderAllFavorites(favoritesData))
+  }
+  fetchFavorites()
+  
+  function renderAllFavorites(favoritesData) {
+    favoritesData.forEach(favorite => renderFavorites(favorite))
+  }
+  
+  function renderFavorites(favorite) {
+    const favoritesLi = document.createElement("li")
+    favoritesLi.textContent = favorite.joke
+    favoriteJokesList.appendChild(favoritesLi)
+  }
   
 
 
