@@ -43,24 +43,24 @@
   ],
   "favorites": [
     {
-      "joke": "MY FAVORITE JOKE EVER",
-      "likes": 2435353255345438,
-      "id": 9
-    },
-    {
-      "joke": "How many bones are in the human hand? A handful of them.",
-      "likes": 6,
+      "joke": "I just wrote a book on reverse psychology. Do not read it!",
+      "likes": 1,
       "id": 10
     },
     {
-      "joke": "Why are basketball players messy eaters? Because they are always dribbling.",
-      "likes": 0,
+      "joke": "Why did Mozart kill all his chickens?\nBecause when he asked them who the best composer was, they'd all say \"Bach bach bach!\"\n",
+      "likes": 4,
       "id": 11
     },
     {
-      "joke": "Why are basketball players messy eaters? Because they are always dribbling.",
-      "likes": 5,
+      "joke": "Conjunctivitis.com – now that’s a site for sore eyes.",
+      "likes": 3,
       "id": 12
+    },
+    {
+      "joke": "I decided to sell my Hoover… well it was just collecting dust.",
+      "likes": 0,
+      "id": 13
     }
   ]
 }
