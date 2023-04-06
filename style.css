@@ -128,6 +128,12 @@ textarea {
   position: relative;
 }
 
+.favorites {
+  overflow: hidden;
+ overflow-y: scroll;
+ height: 100%;
+}
+
 .imgpanel {/*Meme image panel*/
     background-color: #fff;
     border: solid 2px #000;
