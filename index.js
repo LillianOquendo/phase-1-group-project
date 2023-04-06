@@ -173,7 +173,7 @@ function saveJoke() {
       // Remove the joke from the db.json file
       fetch(`${favoritesUrl}/${id}`, {
         method: "DELETE",
-      });
+      })
     });
   
     return listItem;
