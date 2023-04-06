@@ -81,6 +81,11 @@
       "joke": "What did the doctor say to the gingerbread man who broke his leg? Try icing it.",
       "likes": 130,
       "id": 17
+    },
+    {
+      "joke": "What’s Forest Gump’s Facebook password? 1forest1",
+      "likes": 0,
+      "id": 18
     }
   ]
 }
