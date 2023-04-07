@@ -43,6 +43,36 @@
   ],
   "favorites": [
     {
+
+      "joke": "I knew a guy who collected candy canes, they were all in mint condition",
+      "likes": 2,
+      "id": 2
+    },
+    {
+      "joke": "Why are ghosts bad liars? Because you can see right through them!",
+      "likes": 3,
+      "id": 5
+    },
+    {
+      "joke": "Someone asked me to name two structures that hold water. I said \"Well dam\"",
+      "likes": 3,
+      "id": 6
+    },
+    {
+      "joke": "Slept like a log last night … woke up in the fireplace.",
+      "likes": 0,
+      "id": 7
+    },
+    {
+      "joke": "Did you hear the news? FedEx and UPS are merging. They’re going to go by the name Fed-Up from now on.",
+      "likes": 0,
+      "id": 12
+    },
+    {
+      "joke": "hello!!!",
+      "likes": 0,
+      "id": 13
+
       "joke": "Why can't eggs have love? They will break up too soon.",
       "likes": 0,
       "id": 76
@@ -241,6 +271,7 @@
       "joke": "I finally bought the limited edition Thesaurus that I've always wanted. When I opened it, all the pages were blank.\nI have no words to describe how angry I am.",
       "likes": 0,
       "id": 183
+
     }
   ]
 }

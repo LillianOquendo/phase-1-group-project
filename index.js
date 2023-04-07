@@ -241,6 +241,3 @@ function saveJoke() {
     }
     jokeInput.value = '';
   }
-  
-  
-  
