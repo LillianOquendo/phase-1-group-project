@@ -8,6 +8,8 @@
     <title>Dad Joke Generator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+</head>
+<body>
     <article class="comic">
         <div class="panel">
             <p class="text top-left">The Best Generator Out There!</p>
@@ -19,12 +21,15 @@
             <p id="jokeDisplay"></p>
             <p class="text bottom-right">That Gave Me A Good Chuckle!</p>
         </div>
-        
-        <article class="comic">
+        <div class="panel">
+            <h4>❤️Favorites❤️</h4>
+            <ol id="favorites" class="favorites">
+            </ol>
+            <p class="text bottom-right">Save Your Favorite Jokes!</p>
+        </div>
         <div class="panel">
             <p class="text top-left">Oh Golly Look At This!!👀</p>
             <br>
-           
             <h3>Submit Your Own Joke</h3>
             <form id="submitJokeForm">
                 <textarea id="jokeInput" rows="2" cols="50" placeholder="Type your joke here..."></textarea><br>
@@ -33,32 +38,17 @@
                 <br>
             </form>
             <p class="text bottom-right">That's A Great Joke Kiddo!</p>
-            </div>
-            <div class="panel">
-                <!--<p class="speech">A speech bubble</p>-->
-                <h4>❤️Favorites❤️</h4>
-                <ol id="favorites" class="favorites">
-                </ol>
-                <p class="text bottom-right">Save Your Favorite Jokes!</p>
-              </div>
-              
+        </div>
         <div class="panel">
             <p class="text top-left">The Best of The Best!</p>
             <br>
-            <h5>💪Dick Tate's Top 10</h5><!--Green Panel-->
-            <ol id="top10">
+            <h5>💪Dick Tate's Top 10</h5>
+            <ol id="top10" class="top10">
             </ol>
             <!--<p class="text bottom-right">it's responsive to the favorites</p>-->
-          </div>
-                  
-        </article>
-
-</head>
-<body>
-            
-
-    </div>
-
+        </div>
+    </article>
 </body>
 </html>
+
 
