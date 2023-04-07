@@ -43,49 +43,34 @@
   ],
   "favorites": [
     {
-      "joke": "I just wrote a book on reverse psychology. Do not read it!",
-      "likes": 6,
-      "id": 10
+      "joke": "I knew a guy who collected candy canes, they were all in mint condition",
+      "likes": 2,
+      "id": 2
     },
     {
-      "joke": "Why did Mozart kill all his chickens?\nBecause when he asked them who the best composer was, they'd all say \"Bach bach bach!\"\n",
-      "likes": 7,
-      "id": 11
-    },
-    {
-      "joke": "Conjunctivitis.com – now that’s a site for sore eyes.",
+      "joke": "Why are ghosts bad liars? Because you can see right through them!",
       "likes": 3,
+      "id": 5
+    },
+    {
+      "joke": "Someone asked me to name two structures that hold water. I said \"Well dam\"",
+      "likes": 3,
+      "id": 6
+    },
+    {
+      "joke": "Slept like a log last night … woke up in the fireplace.",
+      "likes": 0,
+      "id": 7
+    },
+    {
+      "joke": "Did you hear the news? FedEx and UPS are merging. They’re going to go by the name Fed-Up from now on.",
+      "likes": 0,
       "id": 12
     },
     {
-      "joke": "I decided to sell my Hoover… well it was just collecting dust.",
-      "likes": 2,
+      "joke": "hello!!!",
+      "likes": 0,
       "id": 13
-    },
-    {
-      "joke": "I decided to sell my Hoover… well it was just collecting dust.",
-      "likes": 0,
-      "id": 14
-    },
-    {
-      "joke": "What was the pumpkin’s favorite sport?\n\nSquash.",
-      "likes": 0,
-      "id": 15
-    },
-    {
-      "joke": "The first time I got a universal remote control I thought to myself, \"This changes everything\"",
-      "likes": 1,
-      "id": 16
-    },
-    {
-      "joke": "What did the doctor say to the gingerbread man who broke his leg? Try icing it.",
-      "likes": 130,
-      "id": 17
-    },
-    {
-      "joke": "What’s Forest Gump’s Facebook password? 1forest1",
-      "likes": 0,
-      "id": 18
     }
   ]
 }

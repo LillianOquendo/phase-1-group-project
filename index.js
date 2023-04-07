@@ -3,6 +3,8 @@ const baseUrl = "http://localhost:3000"
 //Create the URL for fetching the top 10 jokes by joining /top10 with the base URL
 const top10Url = baseUrl + "/top10"
 const favoritesUrl = baseUrl + "/favorites"
+const top10 = document.getElementById("top10");
+
 
 //Define the fetchTop10 function
 function fetchTop10() {
@@ -94,27 +96,35 @@ const favoriteJokesList = document.getElementById('favorites');
 saveJokeBtn.addEventListener('click', saveJoke);
 
 function saveJoke() {
-    if (jokeDisplay.textContent !== "") {
-      // Save the joke to the db.json file
-      fetch(favoritesUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          joke: jokeDisplay.textContent,
-          likes: 0,
-        }),
-      })
-        .then((resp) => resp.json())
-        .then((favorite) => {
-          const listItem = createJokeListItem(favorite.joke, favorite.id, favorite.likes);
-          favoriteJokesList.appendChild(listItem);
-        });
-    } else {
-      alert("No joke to save. Please generate a joke first.");
-    }
+  if (jokeDisplay.textContent !== "") {
+    // Save the joke to the db.json file
+    fetch(favoritesUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        joke: jokeDisplay.textContent,
+        likes: 0,
+      }),
+    })
+      .then((resp) => resp.json())
+      .then((favorite) => {
+        const listItem = createJokeListItem(favorite.joke, favorite.id, favorite.likes);
+        favoriteJokesList.appendChild(listItem);
+
+        // Random chance of adding the joke to the top 10 list
+        if (Math.random() < 0.5) { // 50% chance
+          const randomIndex = Math.floor(Math.random() * 10);
+          addToTopTen(jokeDisplay.textContent, randomIndex);
+        }
+      });
+  } else {
+    alert("No joke to save. Please generate a joke first.");
   }
+}
+
+
   
   // Add createJokeListItem function
   function createJokeListItem(jokeTextContent, id, initialLikes = 0) {
@@ -192,6 +202,42 @@ function saveJoke() {
     // Re-append the sorted list items to the 'favoriteJokesList'
     listItems.forEach((item) => favoriteJokesList.appendChild(item));
   }
+
+  function addToTopTen(joke, index) {
+    const listItem = document.createElement('li');
+    listItem.textContent = joke;
+  
+    if (top10.childElementCount === 0) {
+      top10.appendChild(listItem);
+    } else if (top10.childElementCount <= index) {
+      top10.appendChild(listItem);
+    } else {
+      top10.insertBefore(listItem, top10.children[index]);
+    }
+  
+    if (top10.childElementCount > 10) {
+      top10.removeChild(top10.lastChild);
+    }
+  
+    // Update the jokes array in the db.json file
+    const jokes = Array.from(top10.children).map(item => item.textContent.replace(/^0/, ''));
+    fetch(top10Url, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(jokes),
+    });
+  }
   
   
   
+  function submitJoke(e) {
+    e.preventDefault();
+    const jokeInput = document.getElementById('jokeInput');
+    const joke = jokeInput.value;
+    if (joke.trim() !== '') {
+      addToTopTen(joke, top10.childElementCount);
+    }
+    jokeInput.value = '';
+  }

@@ -8,47 +8,59 @@
     <title>Dad Joke Generator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    </head>
+    <body>
     <article class="comic">
         <div class="panel">
-            <p class="text top-left">The Best Generator Out There!</p>
-            <h1>🌽Extra Corny🌽 </h1>
+            <p class="text top-left1">The Best Generator Out There!</p>
+            <br>
+            <h1>🌽Extra Corny🌽</h1><!--Panel 1 Blue-->
             <br>
             <br>
-            <button id="generateJokeBtn">Generate Joke</button>
-            <button id="saveJokeBtn">Save Joke</button>
+            <button id="generateJokeBtn">Generate Corn</button>
+            <button id="saveJokeBtn">Save Corn to the Cob</button>
             <p id="jokeDisplay"></p>
-            <p class="text bottom-right">That Gave Me A Good Chuckle!</p>
+            <p class="text top-right1">That Gave Me A Good Chuckle!</p>
         </div>
         
-        <article class="comic">
         <div class="panel">
-            <p class="text top-left">Oh Golly Look At This!!👀</p>
             <br>
-           
+            <br>
+            <br>
+           <h2>❤️Favorites of the Cob❤️</h2> 
+           <p class="text top-right2">Click ❤️ to Vote for Your Favorite Jokes!
+            <br> 
+            Click 💩 to Delete the Ones That Stink!
+        </p>
+            <p class="text bottom-right">That really tickled my funny bone!!</p>
+            <ol id="favorites" class="favorites">
+            </ol>
+            <p class="text top-left2">Save Your Favorite Jokes!</p>
+          </div>
+         
+        <div class="panel">
+            <p class="text top-left2">Oh Golly Look At This!!👀</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <h3>Submit Your Own Joke</h3>
             <form id="submitJokeForm">
                 <textarea id="jokeInput" rows="2" cols="50" placeholder="Type your joke here..."></textarea><br>
                 <button id= 'button2' type="submit">Submit Your Joke</button>
-                <br>
-                <br>
             </form>
-            <p class="text bottom-right">That's A Great Joke Kiddo!</p>
+            <p class="text bottom-right">That joke really hit the spot!</p>
             </div>
-            <div class="panel">
-                <!--<p class="speech">A speech bubble</p>-->
-                <h4>❤️Favorites❤️</h4>
-                <ol id="favorites" class="favorites">
-                </ol>
-                <p class="text bottom-right">Save Your Favorite Jokes!</p>
-              </div>
-              
+            
+            
         <div class="panel">
-            <p class="text top-left">The Best of The Best!</p>
+            <p class="text top-left2">The Best of The Best!</p>
             <br>
-            <h5>💪Dick Tate's Top 10</h5><!--Green Panel-->
+            <h4>Dick Tate's Top 10</h4><!--Green Panel-->
             <ol id="top10">
             </ol>
-            <!--<p class="text bottom-right">it's responsive to the favorites</p>-->
+            <p class="text bottom-right">You got me with that one!</p>
           </div>
                   
         </article>
@@ -61,4 +73,3 @@
 
 </body>
 </html>
-
