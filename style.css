@@ -5,134 +5,6 @@ body {
 }
 
 
-
-.comic {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    "generate generate generate"
-    "submit favorites top10";
-  font-family: 'Comic Sans', cursive;
-  padding: 1vmin;
-  gap: 1vmin;
-}
-
-h1 {/*Generator Header*/
-  margin-bottom: 10px;
-  font-size: 3vw;
-  margin-top: -10px;
-}
-
-h2 {/*Favorites Header*/
-  position: relative;
-  text-align: center;
-  font-size: 40px;
-  margin-top: 10px;
-   }
-
-h3 {/*Submit Jokes Header*/
-  text-align: center;
-  margin-top: -50px;
-  margin-bottom: 20px;
-  padding: 10px;
-  font-size: 2vw;
-  }
-
-  h4{/*Dick Tate's Header*/
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 10px;
-    font-size: 40px;
-    }
-
-button {/*Generate and Save Buttons*/
-  display: inline-block;
-  margin-right: 40px;
-  outline: 0;
-  border:0;
-  cursor: pointer;
-  text-decoration: none;
-  position: relative;
-  color: #000;
-  background: #fff;
-  line-height: 10px;
-  border-radius: 40px;
-  padding: 30px;
-  font-size: 30px;
-  font-weight: 600;
-  box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
-  transition: all 0.2s;
-  hover:{box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px; transform: scale(1.01);
-  }
-  }
-  
-  #button2 {/*Submit Button*/
-  display: inline-block;
-  margin-right: 0px;
-  margin-bottom: 50px;
-  outline: 0;
-  border:0;
-  cursor: pointer;
-  text-decoration: none;
-  position: relative;
-  color: #000;
-  background: #fff;
-  line-height: 10px;
-  border-radius: 40px;
-  padding: 30px;
-  font-size: 30px;
-  font-weight: 600;
-  box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
-  transition: all 0.2s;
-  hover:{box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px; transform: scale(1.01);
-  }
-  }
-  textarea {/*Submit Bar*/
-    width: 60%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    font-family: inherit;
-    font-size: 30px;
-    resize: vertical;
-    }
-
-  button:hover {/*Changes color of button when hovered over*/
-    background-color: #26ef30;
-    }
-
-textarea {
-  width: 60%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  font-family: inherit;
-  font-size: 14px;
-  resize: vertical;
-}
-.top-left1 {/*comic corner text top left*/
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: skew(-15deg);
-  font-size: 40px;
-}
-.top-left2{
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: skew(-15deg);
-  font-size: 30px;
-}
-.bottom-right {/*comic corner text bottom right*/
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transform: skew(-15deg);
-  font-size: 30px;
-
 .comic {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -146,40 +18,40 @@ textarea {
 }
 
 h1 {
-  font-size: 40px;
-  margin-bottom: 15px;
-  text-align: center;
+  /*Generator Header*/
+  margin-bottom: 10px;
+  font-size: 3vw;
+  margin-top: -10px;
 }
 
 h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  /*Favorites Header*/
+  position: relative;
   text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
 }
 
 h3 {
+  /*Submit Jokes Header*/
   text-align: center;
-  font-size: 30px;
+  margin-top: -50px;
   margin-bottom: 20px;
   padding: 10px;
+  font-size: 2vw;
 }
 
 h4 {
+  /*Dick Tate's Header*/
   text-align: center;
-  font-size: 30px;
   margin-top: 10px;
   margin-bottom: 20px;
   padding: 10px;
-}
-
-h5 {
-  text-align: center;
-  font-size: 25px;
-  margin-bottom: 15px;
-  padding: 10px;
+  font-size: 40px;
 }
 
 button {
+  /*Generate and Save Buttons*/
   display: inline-block;
   margin-right: 40px;
   outline: 0;
@@ -191,15 +63,123 @@ button {
   background: #fff;
   line-height: 10px;
   border-radius: 40px;
-  padding: 20px;
-  font-size: 20px;
+  padding: 30px;
+  font-size: 30px;
   font-weight: 600;
   box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
   transition: all 0.2s;
+
   hover: {
     box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
     transform: scale(1.01);
   }
+}
+
+#button2 {
+  /*Submit Button*/
+  display: inline-block;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  color: #000;
+  background: #fff;
+  line-height: 10px;
+  border-radius: 40px;
+  padding: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+  transition: all 0.2s;
+
+  hover: {
+    box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transform: scale(1.01);
+  }
+}
+
+textarea {
+  /*Submit Bar*/
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 30px;
+  resize: vertical;
+}
+
+button:hover {
+  /*Changes color of button when hovered over*/
+  background-color: #26ef30;
+}
+
+textarea {
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.top-left1 {
+  /*comic corner text top left*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skew(-15deg);
+  font-size: 40px;
+}
+
+.top-left2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skew(-15deg);
+  font-size: 30px;
+}
+
+.bottom-right {
+  /*comic corner text bottom right*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: skew(-15deg);
+  font-size: 30px;
+}
+
+.top-right1 {
+  /*comic corner text top right*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: skew(-15deg);
+  font-size: 40px;
+}
+
+.top-right2 {
+  /*comic corner text top right*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: skew(-15deg);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#jokeDisplay {
+  /*Text produced by joke generator*/
+  font-size: 1.5vw;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
 
 .panel {
   background-color: #fff;
@@ -212,38 +192,41 @@ button {
   text-align: center;
 }
 
-.favorites { /* To enable scrolling through the favorites and top ten lists, 
+.favorites {
+  /* To enable scrolling through the favorites and top ten lists, 
   we set 'overflow-y: scroll' and 'height: 100%' properties for the 
   .favorites class */
   margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 2vh;
-    overflow: hidden;
-   overflow-y: scroll;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 2vh;
+  overflow: hidden;
+  overflow-y: scroll;
   height: 50%;
 }
 
-#top10 {/*Top 10 Text*/
+#top10 {
+  /*Top 10 Text*/
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 40px;
   margin-bottom: 80px;
   font-size: 1vw;
   overflow-y: scroll;
-  height:50%;
+  height: 50%;
 
 
 }
 
 
-.text {/*Boxes housing corner text. This affects all boxes!*/
+.text {
+  /*Boxes housing corner text. This affects all boxes!*/
   background-color: #fff;
   border: solid 2px #000;
   margin: 0;
   padding: 3px 10px;
-  }
+}
 
 .top-left {
   left: -6px;
@@ -265,85 +248,6 @@ button {
 }
 
 
-button:hover {
-  background-color: #0056b3;
-}
-
-textarea {
-  width: 60%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  font-family: inherit;
-  font-size: 14px;
-  resize: vertical;
-}
-
-#jokeDisplay {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-top: 20px;
-  margin-right: 50px;
-  margin-left: 50px;
-  text-align: center;
-}
-
-.panel {
-  background-color: #fff;
-  border: solid 2px #000;
-  box-shadow: 0 6px 6px -6px #000;
-  padding: 30px;
-  height: 400px;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-}
-
-.favorites {
-  overflow: hidden;
-  /* To enable scrolling through the favorites and top ten lists, 
-  we set 'overflow-y: scroll' and 'height: 100%' properties for the 
-  .favorites class */
-  overflow-y: scroll;
-  height: 100%;
-}
-
-.top10 {
-  overflow: hidden;
-  overflow-y: scroll;
-  height: 100%;
-}
-
-
-.text {
-  background-color: #fff;
-  border: solid 2px #000;
-  margin: 0;
-  padding: 3px 10px;
-}
-
-.top-left {
-  left: -6px;
-  position: absolute;
-  top: -2px;
-  transform: skew(-15deg);
-}
-
-.bottom-right {
-  bottom: -2px;
-  position: absolute;
-  right: -6px;
-  transform: skew(-15deg);
-}
-
-.panel:nth-child(1) {
-  grid-area: generate;
-}
-
-.panel:nth-child(2) {
-  grid-area: submit;
-}
-
 .panel:nth-child(3) {
   grid-area: favorites;
 }
@@ -351,6 +255,7 @@ textarea {
 .panel:nth-child(4) {
   grid-area: top10;
 }
+
 .panel:nth-child(4n + 1) {
   background-image: radial-gradient(circle, yellow, orange);
 }
@@ -388,6 +293,4 @@ textarea {
 
 .fa-poop:hover {
   color: #78683a;
-
 }
-
