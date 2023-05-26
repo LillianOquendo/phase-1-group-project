@@ -1,0 +1,71 @@
+{
+  "top10": [
+    {
+      "id": "1",
+      "joke": "Why do hippies love corduroy? Because it's groovy man."
+    },
+    {
+      "id": "2",
+      "joke": "I used to hate facial hair, but it grew on me."
+    },
+    {
+      "id": "3",
+      "joke": "What do you call a bundle of hay in a church? Christian Bale."
+    },
+    {
+      "id": "4",
+      "joke": "I'm afraid for the calendar. Its days are numbered."
+    },
+    {
+      "id": "5",
+      "joke": "*With a pirate voice* Wha'ts a pirates favorite letter? R? RRRRR One might think, however, it would actually be the C!"
+    },
+    {
+      "id": "6",
+      "joke": "Have you ever tried to make a belt out of wrist watches? It's a waist of time."
+    },
+    {
+      "id": "7",
+      "joke": "A pony with a cough is just a little horse."
+    },
+    {
+      "id": "8",
+      "joke": "My wife said I should do lunges to stay in shape. That would be a big step forward."
+    },
+    {
+      "id": "9",
+      "joke": "Why did the bicycle fall over? It was two tired."
+    },
+    {
+      "id": "10",
+      "joke": "How do you fix a broken pizza? With tomato paste."
+    }
+  ],
+  "favorites": [
+    {
+      "joke": "I knew a guy who collected candy canes, they were all in mint condition",
+      "likes": 2,
+      "id": 2
+    },
+    {
+      "joke": "Why are ghosts bad liars? Because you can see right through them!",
+      "likes": 3,
+      "id": 5
+    },
+    {
+      "joke": "Someone asked me to name two structures that hold water. I said \"Well dam\"",
+      "likes": 3,
+      "id": 6
+    },
+    {
+      "joke": "Slept like a log last night … woke up in the fireplace.",
+      "likes": 0,
+      "id": 7
+    },
+    {
+      "joke": "Did you hear the news? FedEx and UPS are merging. They’re going to go by the name Fed-Up from now on.",
+      "likes": 0,
+      "id": 12
+    }
+  ]
+}
